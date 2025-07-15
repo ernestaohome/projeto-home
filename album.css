@@ -1,0 +1,63 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+/* Jumbotron */
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+/* Hero layout */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+}
+
+/* Card image & height consistency */
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card.h-100 {
+  min-height: 100%;
+}
+
+/* Footer */
+footer {
+  padding: 3rem 0;
+}
+
+footer p {
+  margin-bottom: 0.25rem;
+}
